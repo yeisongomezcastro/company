@@ -15,31 +15,15 @@ public class PedidosEntity {
 	@Column(nullable = false)
 	private TipoVentaEntity tipoVenta;
 	@Column(nullable = false)
-	private Date FechaEntrega;
+	private Date fechaEntrega;
 	@Column(nullable = false)
-	private Date FechaPedido;
+	private Date fechaPedido;
 	@Column(nullable = false)
-	private Integer CantidadPedida;
+	private Integer cantidadPedida;
 	@Column(nullable = false)
-	private Integer CantidadEntregada;
+	private Integer cantidadEntregada;
 	@Column(nullable = false)
-	private Integer TotalTallosPedidos;
-
-	public PedidosEntity() {
-	}
-
-	public PedidosEntity(String codPedido, ClienteEntity cliente, TipoVentaEntity tipoVenta, Date fechaEntrega,
-			Date fechaPedido, Integer cantidadPedida, Integer cantidadEntregada, Integer totalTallosPedidos) {
-		super();
-		this.codPedido = codPedido;
-		this.cliente = cliente;
-		this.tipoVenta = tipoVenta;
-		FechaEntrega = fechaEntrega;
-		FechaPedido = fechaPedido;
-		CantidadPedida = cantidadPedida;
-		CantidadEntregada = cantidadEntregada;
-		TotalTallosPedidos = totalTallosPedidos;
-	}
+	private Integer totalTallosPedidos;
 
 	public String getCodPedido() {
 		return codPedido;
@@ -66,43 +50,43 @@ public class PedidosEntity {
 	}
 
 	public Date getFechaEntrega() {
-		return FechaEntrega;
+		return fechaEntrega;
 	}
 
 	public void setFechaEntrega(Date fechaEntrega) {
-		FechaEntrega = fechaEntrega;
+		this.fechaEntrega = fechaEntrega;
 	}
 
 	public Date getFechaPedido() {
-		return FechaPedido;
+		return fechaPedido;
 	}
 
 	public void setFechaPedido(Date fechaPedido) {
-		FechaPedido = fechaPedido;
+		this.fechaPedido = fechaPedido;
 	}
 
 	public Integer getCantidadPedida() {
-		return CantidadPedida;
+		return cantidadPedida;
 	}
 
 	public void setCantidadPedida(Integer cantidadPedida) {
-		CantidadPedida = cantidadPedida;
+		this.cantidadPedida = cantidadPedida;
 	}
 
 	public Integer getCantidadEntregada() {
-		return CantidadEntregada;
+		return cantidadEntregada;
 	}
 
 	public void setCantidadEntregada(Integer cantidadEntregada) {
-		CantidadEntregada = cantidadEntregada;
+		this.cantidadEntregada = cantidadEntregada;
 	}
 
 	public Integer getTotalTallosPedidos() {
-		return TotalTallosPedidos;
+		return totalTallosPedidos;
 	}
 
 	public void setTotalTallosPedidos(Integer totalTallosPedidos) {
-		TotalTallosPedidos = totalTallosPedidos;
+		this.totalTallosPedidos = totalTallosPedidos;
 	}
 
 }
